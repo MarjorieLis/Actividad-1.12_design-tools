@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesignTools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Switch para cambiar tema -->
+        <div class="theme-toggle">
+            <span>Claro</span>
+            <label class="switch">
+                <input type="checkbox" id="theme-switcher">
+                <span class="slider"></span>
+            </label>
+            <span>Oscuro</span>
+        </div>
+
+        <!-- Barra de navegación -->
+        <nav class="navbar">
+            <h1>DesignTools</h1>
+            <div class="nav-links">
+                <a href="#">Inicio</a>
+                <a href="#">Proyectos</a>
+                <a href="#">Herramientas</a>
+                <a href="#">Ayuda</a>
+            </div>
+        </nav>
+
+        <!-- Sección principal -->
+        <div class="hero">
+            <h2>Herramientas de diseño</h2>
+            <p>Edición básica de imágenes y gráficos</p>
+            <button class="btn-primary">Nuevo proyecto</button>
+        </div>
+
+        <!-- Tarjetas de herramientas -->
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Editor de imágenes</h3>
+                <p>Recorta y ajusta</p>
+                <button class="btn-secondary">Abrir</button>
+            </div>
+
+            <div class="card">
+                <h3>Video rápido</h3>
+                <p>Corta clips</p>
+                <button class="btn-secondary">Abrir</button>
+            </div>
+
+            <div class="card">
+                <h3>Dibujo</h3>
+                <p>Crear formas</p>
+                <button class="btn-secondary">Abrir</button>
+            </div>
+
+            <div class="card">
+                <h3>Gráficos</h3>
+                <p>Crear visualizaciones</p>
+                <button class="btn-secondary">Abrir</button>
+            </div>
+        </div>
+
+        <!-- Formulario de configuración -->
+        <div class="card form-card">
+            <h3>Preferencias</h3>
+            <div class="form-group">
+                <label for="nombre">Tu nombre</label>
+                <input type="text" id="nombre" placeholder="Ej: Marjorie">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo</label>
+                <input type="email" id="email" placeholder="ejemplo@email.com">
+            </div>
+            <div class="form-group">
+                <label for="herramienta">Herramienta</label>
+                <select id="herramienta">
+                    <option value="imagen">Editor de imágenes</option>
+                    <option value="video">Edición de video</option>
+                    <option value="vector">Dibujo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="volumen">Brillo</label>
+                <input type="range" id="volumen" min="0" max="100" value="60">
+                <span class="range-value">60%</span>
+            </div>
+            <button class="btn-primary btn-block">Guardar</button>
+        </div>
+
+        <!-- Demo de botones -->
+        <div class="card">
+            <h3>Botones</h3>
+            <div class="btn-group">
+                <button class="btn-primary">Principal</button>
+                <button class="btn-secondary">Secundario</button>
+                <button class="btn-accent">Destacado</button>
+                <button disabled>No disponible</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
